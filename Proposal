@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Raveena ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#ff758c,#ff7eb3,#ffc3a0);
+overflow:hidden;
+}
+
+.card{
+width:90%;
+max-width:600px;
+background:rgba(255,255,255,.15);
+backdrop-filter:blur(20px);
+padding:35px;
+border-radius:25px;
+text-align:center;
+color:white;
+box-shadow:0 10px 30px rgba(0,0,0,.2);
+animation:fade 1.5s;
+}
+
+h1{
+font-size:38px;
+margin-bottom:20px;
+}
+
+p{
+line-height:1.8;
+font-size:18px;
+}
+
+button{
+margin:15px;
+padding:14px 35px;
+font-size:18px;
+border:none;
+border-radius:50px;
+cursor:pointer;
+transition:.3s;
+}
+
+#yes{
+background:#ff2e63;
+color:white;
+}
+
+#yes:hover{
+transform:scale(1.1);
+}
+
+#no{
+background:white;
+color:#ff2e63;
+position:relative;
+}
+
+.heart{
+position:absolute;
+color:white;
+font-size:25px;
+animation:float 6s linear infinite;
+}
+
+@keyframes float{
+0%{
+transform:translateY(100vh);
+opacity:0;
+}
+100%{
+transform:translateY(-100px);
+opacity:1;
+}
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:scale(.8);
+}
+to{
+opacity:1;
+transform:scale(1);
+}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>Dear Raveena ❤️</h1>
+
+<p>
+From the day we started talking, you've brought a smile to my face in ways I never expected.
+Every conversation with you feels special, and every moment with you becomes a memory I cherish.
+<br><br>
+
+I don't know what the future holds, but I do know that I'd love to walk through it with you.
+You're kind, beautiful, and someone I genuinely admire.
+<br><br>
+
+<b>Will you be my girlfriend and give us a chance to create something beautiful together? ❤️🌹</b>
+
+<br><br>
+
+Forever hoping,<br>
+<b>Amit ❤️</b>
+
+</p>
+
+<button id="yes">Yes ❤️</button>
+
+<button id="no">No 💔</button>
+
+</div>
+
+<script>
+
+for(let i=0;i<30;i++){
+
+let h=document.createElement("div");
+
+h.className="heart";
+
+h.innerHTML="❤️";
+
+h.style.left=Math.random()*100+"vw";
+
+h.style.animationDuration=(3+Math.random()*4)+"s";
+
+document.body.appendChild(h);
+
+}
+
+document.getElementById("yes").onclick=function(){
+
+document.body.innerHTML=`
+<div style="display:flex;justify-content:center;align-items:center;height:100vh;background:#ff4d6d;color:white;font-family:Poppins;text-align:center;padding:20px;">
+<div>
+<h1 style="font-size:55px;">🎉❤️</h1>
+<h2>You just made me the happiest person in the world!</h2>
+<h1>I Love You Raveena ❤️🌹</h1>
+</div>
+</div>
+`;
+
+}
+
+let no=document.getElementById("no");
+
+no.onmouseover=function(){
+
+this.style.position="absolute";
+
+this.style.left=Math.random()*80+"%";
+
+this.style.top=Math.random()*80+"%";
+
+}
+
+</script>
+
+</body>
+</html>
